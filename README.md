@@ -25,7 +25,7 @@ Vagrant.configure('2') do |config|
 
   config.vm.provision 'shell',
                       reboot: true,
-                      inline: 'echo BRFORE_REBOOT'
+                      inline: 'echo BEFORE_REBOOT'
 
   config.vm.provision 'shell',
                       inline: 'echo AFTER_REBOOT'
